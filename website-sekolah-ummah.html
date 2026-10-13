@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sekolah Alam Cahaya Ummah | Profil Sekolah</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['DM Sans', 'sans-serif']
+          },
+          colors: {
+            forest: '#0b4037',
+            forestDark: '#07352e',
+            gold: '#e4a52c',
+            ink: '#104b46'
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="min-h-screen bg-[#f8f8f3] font-sans text-slate-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-gradient-to-r from-[#103f37] to-[#06382f] text-white shadow-md">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 lg:px-8">
+
+      <a href="#beranda" class="flex items-center gap-3">
+        <img src="./logo-cahaya-ummah-transparan.png"
+             alt="Logo Sekolah Alam Cahaya Ummah"
+             class="h-12 w-14 object-contain">
+
+        <span class="leading-tight">
+          <span class="block text-base font-extrabold sm:text-lg">Sekolah Alam</span>
+          <span class="block text-base font-extrabold sm:text-lg">Cahaya Ummah</span>
+          <span class="mt-0.5 block text-[10px] text-white/80 sm:text-xs">
+            Berilmu • Berakhlak • Berprestasi
+          </span>
+        </span>
+      </a>
+
+      <button id="menuButton"
+              class="rounded-lg border border-white/30 px-3 py-2 md:hidden"
+              aria-label="Buka menu"
+              aria-expanded="false">
+        ☰
+      </button>
+
+      <nav id="navMenu"
+           class="absolute left-0 right-0 top-[74px] z-20 hidden flex-col gap-1 bg-forestDark p-4 shadow-lg md:static md:flex md:flex-row md:items-center md:gap-7 md:bg-transparent md:p-0 md:shadow-none">
+
+        <a class="nav-link border-b-2 border-gold py-2 text-sm font-semibold" href="#beranda">Beranda</a>
+        <a class="nav-link py-2 text-sm hover:text-amber-300" href="#tentang">Profil Sekolah</a>
+        <a class="nav-link py-2 text-sm hover:text-amber-300" href="#keunggulan">Keunggulan</a>
+        <a class="nav-link py-2 text-sm hover:text-amber-300" href="#galeri">Galeri</a>
+        <a class="nav-link py-2 text-sm hover:text-amber-300" href="#kontak">Kontak</a>
+      </nav>
+
+      <!-- <a href="#tentang"
+         class="hidden rounded-xl bg-gold px-5 py-2.5 text-sm font-bold text-white shadow hover:bg-amber-500 sm:inline-flex">
+        Kenali Sekolah
+      </a> -->
+
+    </div>
+  </header>
+
+  <main id="beranda">
+
+    <!-- BERANDA: BACKGROUND FOTO -->
+    <section class="relative isolate overflow-hidden bg-forest text-white">
+
+      <!-- FOTO BACKGROUND -->
+      <div class="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+           style="background-image: url('bg-sekolah.jpg');">
+      </div>
+
+      <!-- LAPISAN GELAP AGAR TEKS TERBACA -->
+      <div class="absolute inset-0 -z-10 bg-black/55"></div>
+
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-16 sm:py-20 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-24">
+
+        <div>
+          <p class="mb-3 text-xs font-bold tracking-[0.24em] text-amber-200 sm:text-sm">
+            PENDIDIKAN ISLAMI • BERBASIS ALAM
+          </p>
+
+          <h1 class="max-w-2xl text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+            Sekolah Alam<br>
+            <span class="text-amber-300">Cahaya Ummah</span>
+          </h1>
+
+          <p class="mt-5 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg">
+            Lingkungan belajar yang menyenangkan untuk membantu anak tumbuh cerdas, berakhlak mulia, mandiri, dan kreatif.
+          </p>
+
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="#tentang"
+               class="rounded-full bg-gold px-6 py-3 text-sm font-bold text-white shadow-lg hover:bg-amber-500">
+              Kenali Sekolah Kami
+            </a>
+
+           
+          </div>
+        </div>
+
+        <div class="rounded-3xl border border-white/20 bg-black/25 p-6 shadow-2xl backdrop-blur-sm sm:p-8">
+
+          <div class="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-white/15 text-3xl">
+            🌿
+          </div>
+
+          <p class="text-xs font-bold tracking-[0.2em] text-amber-200">
+            TUMBUH BERSAMA KEBAIKAN
+          </p>
+
+          <h2 class="mt-3 text-2xl font-extrabold leading-snug sm:text-3xl">
+            Cerdas, berakhlak mulia, mandiri, dan kreatif.
+          </h2>
+
+          <p class="mt-4 leading-relaxed text-white/90">
+            Pendidikan Islami yang mendukung anak belajar, mengembangkan potensi, dan membiasakan nilai-nilai kebaikan dalam kehidupan sehari-hari.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFIL SEKOLAH -->
+    <section id="tentang" class="px-5 py-14 sm:py-20">
+      <div class="mx-auto max-w-5xl">
+
+        <div class="text-center">
+          <p class="text-xs font-extrabold tracking-[0.22em] text-amber-600">
+            MENGENAL SEKOLAH KAMI
+          </p>
+
+          <h2 class="mt-2 text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
+            Pendidikan untuk Tumbuh Lebih Baik
+          </h2>
+        </div>
+
+        <div class="mt-8 rounded-3xl border border-emerald-900/10 bg-white p-6 shadow-xl sm:p-10">
+
+          <p class="text-base leading-8 text-slate-700 sm:text-lg">
+           Sekolah Alam Cahaya Ummah menghadirkan pendidikan Islami dengan suasana belajar yang menyenangkan untuk membentuk generasi yang cerdas, berakhlak mulia, mandiri, dan kreatif.
+          </p>
+
+          <p class="mt-5 text-base leading-8 text-slate-700 sm:text-lg">
+            Sekolah ini layak dikenal oleh Ayah dan Bunda yang mencari pendidikan Islami yang bermanfaat bagi perkembangan dan masa depan anak. 🌿📚
+          </p>
+
+          <div class="mt-8 grid gap-3 sm:grid-cols-3">
+
+            <div class="rounded-2xl bg-[#f0f4ef] p-4">
+              <span class="text-2xl">📖</span>
+              <h3 class="mt-2 font-bold text-ink">Belajar</h3>
+              <p class="mt-1 text-sm leading-relaxed text-slate-600">
+                Suasana belajar yang menyenangkan dan bermanfaat.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-[#f0f4ef] p-4">
+              <span class="text-2xl">🌱</span>
+              <h3 class="mt-2 font-bold text-ink">Mengembangkan Potensi</h3>
+              <p class="mt-1 text-sm leading-relaxed text-slate-600">
+                Mendorong anak mengenali dan mengembangkan kemampuan dirinya.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-[#f0f4ef] p-4">
+              <span class="text-2xl">🤲</span>
+              <h3 class="mt-2 font-bold text-ink">Nilai-Nilai Islam</h3>
+              <p class="mt-1 text-sm leading-relaxed text-slate-600">
+                Menumbuhkan akhlak mulia dan kebiasaan baik sehari-hari.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEUNGGULAN SEKOLAH -->
+    <section id="keunggulan" class="border-y border-emerald-900/10 bg-white px-5 py-14 sm:py-16">
+
+      <div class="mx-auto grid max-w-6xl gap-8 md:grid-cols-3 md:items-center">
+
+        <div class="flex justify-center">
+          <div class="grid h-20 w-20 place-items-center rounded-full bg-[#edf1e1] p-5 sm:h-48 sm:w-48 overflow-hidden">
+            <img src="./logo-cahaya-ummah-transparan.png"
+                 alt="Logo Sekolah Alam Cahaya Ummah"
+                 class="h-full w-full object-contain">
+          </div>
+        </div>
+
+        <div class="md:col-span-2">
+
+          <p class="text-xs font-extrabold tracking-[0.22em] text-amber-600">
+            KEUNGGULAN SEKOLAH
+          </p>
+
+          <h2 class="mt-2 text-2xl font-extrabold text-ink sm:text-3xl">
+            Belajar dengan nilai, tumbuh dengan kebaikan
+          </h2>
+
+          <p class="mt-4 leading-7 text-slate-600">
+            Sekolah Alam Cahaya Ummah menghadirkan pendidikan Islami dengan suasana belajar yang menyenangkan untuk membantu anak mengembangkan potensi diri serta menanamkan nilai-nilai kebaikan. Kami berharap dapat membentuk generasi yang cerdas, berakhlak mulia, mandiri, dan kreatif.
+          </p>
+
+          <div class="mt-6 grid gap-4 sm:grid-cols-2">
+
+            <div class="rounded-2xl bg-[#f0f4ef] p-4">
+              <h3 class="font-bold text-ink">🤲 Pendidikan Islami</h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Mengenalkan dan membiasakan nilai-nilai Islam dalam kehidupan sehari-hari.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-[#f0f4ef] p-4">
+              <h3 class="font-bold text-ink">💚 Akhlak Mulia</h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Mendorong anak membangun sikap santun, peduli, dan berbuat baik.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-[#f0f4ef] p-4">
+              <h3 class="font-bold text-ink">🌱 Mandiri dan Percaya Diri</h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Mendukung anak belajar bertanggung jawab dan mengenali potensi dirinya.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-[#f0f4ef] p-4">
+              <h3 class="font-bold text-ink">🎨 Kreatif dan Aktif</h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Memberi ruang bagi anak untuk mengeksplorasi ide dan mengembangkan kemampuan.
+              </p>
+            </div>
+
+            <div class="rounded-2xl bg-[#f0f4ef] p-4 sm:col-span-2">
+              <h3 class="font-bold text-ink">📚 Suasana Belajar Menyenangkan</h3>
+              <p class="mt-1 text-sm leading-6 text-slate-600">
+                Menciptakan pengalaman belajar yang positif, bermakna, dan mendukung perkembangan anak.
+              </p>
+            </div>
+
+          </div>
+
+          
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI: TETAP 2 FOTO -->
+    <section id="galeri" class="px-5 py-14 sm:py-20">
+      <div class="mx-auto max-w-6xl">
+
+        <div class="text-center">
+          <p class="text-xs font-extrabold tracking-[0.22em] text-amber-600">
+            GALERI SEKOLAH
+          </p>
+
+          <h2 class="mt-2 text-3xl font-extrabold text-ink sm:text-4xl">
+            Sekilas Kegiatan Sekolah
+          </h2>
+
+          <p class="mx-auto mt-3 max-w-2xl leading-7 text-slate-600">
+            Beberapa foto untuk mengenal suasana Sekolah Alam Cahaya Ummah lebih dekat.
+          </p>
+        </div>
+
+        <div class="mt-8 grid gap-6 sm:grid-cols-2">
+
+          <figure class="overflow-hidden rounded-3xl border border-emerald-900/10 bg-white shadow-lg">
+            <img src="./sodaqoh-jumat.jpg"
+                 alt="Foto kegiatan Sekolah Alam Cahaya Ummah 1"
+                 class="h-64 w-full object-cover"
+                 onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8efe5/104b46?text=Foto+Sekolah+1'">
+
+            <figcaption class="p-4 font-semibold text-ink">
+              Sedekah Jum'at
+            </figcaption>
+          </figure>
+
+          <figure class="overflow-hidden rounded-3xl border border-emerald-900/10 bg-white shadow-lg">
+            <img src="./berkebun.jpg"
+                 alt="Foto kegiatan Sekolah Alam Cahaya Ummah 2"
+                 class="h-64 w-full object-cover"
+                 onerror="this.onerror=null;this.src='https://placehold.co/800x500/e8efe5/104b46?text=Foto+Sekolah+2'">
+
+            <figcaption class="p-4 font-semibold text-ink">
+              Belajar Berkebun
+            </figcaption>
+          </figure>
+
+        </div>
+
+        <p class="mt-4 text-center text-sm text-slate-500">
+          
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- KONTAK PALING BAWAH -->
+  <footer id="kontak" class="bg-gradient-to-r from-[#103f37] to-[#06382f] text-white">
+
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-5 py-7 text-center md:flex-row md:px-8 md:text-left">
+
+      <a href="#beranda" class="flex items-center gap-3">
+        <img src="./logo-cahaya-ummah-transparan.png"
+             alt="Logo sekolah"
+             class="h-11 w-12 object-contain">
+
+        <span class="text-left leading-tight">
+          <span class="block text-sm font-extrabold">Sekolah Alam</span>
+          <span class="block text-sm font-extrabold">Cahaya Ummah</span>
+          <span class="mt-1 block text-[10px] text-white/70">
+            Berilmu • Berakhlak • Berprestasi
+          </span>
+        </span>
+      </a>
+
+      <div class="text-center md:text-right">
+        <p class="text-sm text-white/80">
+          Bersama membangun generasi terbaik 🌿
+        </p>
+
+        <a class="mt-3 inline-flex rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-white hover:bg-green-600"
+           href="https://wa.me/6281226632967?text=Assalamu%27alaikum%2C%20saya%20ingin%20mengetahui%20informasi%20tentang%20Sekolah%20Alam%20Cahaya%20Ummah."
+           target="_blank"
+           rel="noopener noreferrer">
+          Hubungi via WhatsApp
+        </a>
+
+        <p class="mt-2 text-xs text-white/70">
+          - Rani Nurrahmah
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MENU HP -->
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const navMenu = document.getElementById('navMenu');
+
+    menuButton.addEventListener('click', () => {
+      const hidden = navMenu.classList.toggle('hidden');
+      menuButton.setAttribute('aria-expanded', String(!hidden));
+    });
+
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth < 768) {
+          navMenu.classList.add('hidden');
+          menuButton.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
